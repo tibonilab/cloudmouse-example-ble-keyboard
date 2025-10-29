@@ -26,7 +26,7 @@ The device connects as a Bluetooth HID keyboard and sends media control commands
 
 1. Power on the device
 2. On your computer/phone, scan for Bluetooth devices
-3. Connect to "CloudMouse-XXXXXXXX"
+3. Connect to "CM-XXXXXXXX"
 4. The device will appear as a Bluetooth keyboard
 5. Start using the encoder to control volume!
 
@@ -110,11 +110,7 @@ Visual feedback shows the current action on screen for 1 second before returning
 ## Compatibility
 
 Tested and working on:
-- ✅ Windows 10/11
-- ✅ macOS Monterey+
 - ✅ Linux (Ubuntu, Mint)
-- ✅ Android 10+
-- ✅ iOS 14+
 
 ## Dependencies
 
