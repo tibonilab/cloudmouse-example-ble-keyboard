@@ -27,7 +27,7 @@ namespace CloudMouse::Network
 
         // Create BLE keyboard instance with device-specific name
         // Note: CloudMouse is desk-powered, no battery reporting needed
-        bleKeyboard = new BleKeyboard(deviceName.c_str(), manufacturer.c_str());
+        bleKeyboard = new BleKeyboard("ESP32-Volume"); //deviceName.c_str(), manufacturer.c_str());
 
         // Start BLE HID service and begin advertising
         bleKeyboard->begin();
