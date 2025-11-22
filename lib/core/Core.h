@@ -12,11 +12,7 @@
  * - Core 1: UI rendering, encoder input, display updates (30Hz)
  */
 
-<<<<<<< HEAD
-#pragma once;
-=======
 #pragma once
->>>>>>> upstream/main
 
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
@@ -28,10 +24,7 @@
 #include "../hardware/DisplayManager.h"
 #include "../hardware/SimpleBuzzer.h"
 #include "../network/WebServerManager.h"
-<<<<<<< HEAD
 #include "../network/BluetoothManager.h"
-=======
->>>>>>> upstream/main
 
 
 namespace CloudMouse
@@ -126,10 +119,7 @@ namespace CloudMouse
     WiFiManager *wifi = nullptr;
     WebServerManager *webServer = nullptr;
     LEDManager *ledManager = nullptr;
-<<<<<<< HEAD
     BluetoothManager *bluetoothManager = nullptr;
-=======
->>>>>>> upstream/main
 
     // System services
     PreferencesManager prefs;

@@ -9,8 +9,5 @@
 #include "lib/utils/NTPManager.cpp"
 #include "lib/utils/QRCodeManager.cpp"
 #include "lib/prefs/PreferencesManager.cpp"
-<<<<<<< HEAD
 #include "lib/network/BluetoothManager.cpp"
 #include "lib/vendor/ESP32-BLE-Keyboard/BleKeyboard.cpp"
-=======
->>>>>>> upstream/main

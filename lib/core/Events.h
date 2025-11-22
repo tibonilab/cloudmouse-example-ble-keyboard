@@ -88,7 +88,6 @@ enum class EventType {
      */
     ENCODER_LONG_PRESS,
     
-<<<<<<< HEAD
     /**
      * Volume control feedback - volume increased
      * Usage: Display "VOLUME UP" message on screen
@@ -107,8 +106,6 @@ enum class EventType {
      */
     VOLUME_MUTE_FEEDBACK,
 
-=======
->>>>>>> upstream/main
     // ========================================================================
     // DISPLAY CONTROL EVENTS
     // ========================================================================

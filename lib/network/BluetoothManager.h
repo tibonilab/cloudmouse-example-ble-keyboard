@@ -39,7 +39,6 @@
 
 #pragma once
 #include <Arduino.h>
-<<<<<<< HEAD
 #ifdef PLATFORMIO
 #include <BleKeyboard.h>
 #else
@@ -48,21 +47,12 @@
 #include "../utils/DeviceID.h"
 #include "../config/DeviceConfig.h"
 #include "../core/Events.h"
-=======
-#include <BleKeyboard.h>
-#include "../utils/DeviceID.h"
-#include "../config/DeviceConfig.h"
->>>>>>> upstream/main
 
 using namespace CloudMouse::Utils;
 
 namespace CloudMouse::Network
-<<<<<<< HEAD
 {    
 
-=======
-{
->>>>>>> upstream/main
     /**
      * Bluetooth connection state enumeration
      * Represents all possible states in the BLE lifecycle
@@ -185,7 +175,6 @@ namespace CloudMouse::Network
          */
         const BleKeyboard *getBleKeyboard() const { return bleKeyboard; }
 
-<<<<<<< HEAD
 
         /**
          * Handle encoder events for BLE media controls
@@ -200,8 +189,6 @@ namespace CloudMouse::Network
          */
         void handleEncoderEvents(const Event& event);
 
-=======
->>>>>>> upstream/main
     private:
         // BLE HID keyboard instance (application layer interface)
         BleKeyboard *bleKeyboard = nullptr;
