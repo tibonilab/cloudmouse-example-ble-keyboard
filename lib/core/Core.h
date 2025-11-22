@@ -12,7 +12,11 @@
  * - Core 1: UI rendering, encoder input, display updates (30Hz)
  */
 
+<<<<<<< HEAD
 #pragma once;
+=======
+#pragma once
+>>>>>>> upstream/main
 
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
@@ -24,7 +28,10 @@
 #include "../hardware/DisplayManager.h"
 #include "../hardware/SimpleBuzzer.h"
 #include "../network/WebServerManager.h"
+<<<<<<< HEAD
 #include "../network/BluetoothManager.h"
+=======
+>>>>>>> upstream/main
 
 
 namespace CloudMouse
@@ -88,6 +95,13 @@ namespace CloudMouse
     void setLEDManager(LEDManager *ledManager) { this->ledManager = ledManager; }
     void setBluetoothManager(BluetoothManager *bluetoothManager) { this->bluetoothManager = bluetoothManager; }
 
+    // Hardware components getters
+    EncoderManager* getEncoder() const { return encoder; }
+    DisplayManager* getDisplay() const { return display; }
+    WiFiManager* getWiFi() const { return wifi; }
+    WebServerManager* getWebServer() const { return webServer; }
+    LEDManager* getLEDManager() const { return ledManager; }
+
     // State management
     SystemState getState() const { return currentState; }
     void setState(SystemState state);
@@ -112,7 +126,10 @@ namespace CloudMouse
     WiFiManager *wifi = nullptr;
     WebServerManager *webServer = nullptr;
     LEDManager *ledManager = nullptr;
+<<<<<<< HEAD
     BluetoothManager *bluetoothManager = nullptr;
+=======
+>>>>>>> upstream/main
 
     // System services
     PreferencesManager prefs;

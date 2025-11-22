@@ -112,7 +112,11 @@ namespace CloudMouse
  * - Feature availability (cloud vs local features)
  * - Power management (WiFi radio control)
  */
+<<<<<<< HEAD
 #define WIFI_REQUIRED false
+=======
+#define WIFI_REQUIRED true
+>>>>>>> upstream/main
 
 // ============================================================================
 // DEVICE IDENTIFICATION SYSTEM

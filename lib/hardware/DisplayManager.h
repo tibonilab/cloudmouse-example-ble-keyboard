@@ -98,6 +98,11 @@ namespace CloudMouse::Hardware
 {
     using namespace CloudMouse::Utils;
 
+    /**
+     * custom DisplayManager callback definition
+     */
+    typedef void (*AppDisplayCallback)(const CloudMouse::Event& event);
+
     class DisplayManager
     {
     public:
@@ -187,6 +192,15 @@ namespace CloudMouse::Hardware
          */
         void processEvent(const CloudMouse::Event &event);
 
+        /**
+         * Register callback function for custom DislpayManager
+         * 
+         * @param callback Custom DisplayManager event process function
+         */
+        void registerAppCallback(AppDisplayCallback callback) {
+            appCallback = callback;
+        }
+
         // ========================================================================
         // STATUS QUERY INTERFACE
         // ========================================================================
@@ -275,6 +289,8 @@ namespace CloudMouse::Hardware
         LGFX_ILI9488 display;          // Hardware display controller interface
         LGFX_Sprite *sprite = nullptr; // PSRAM-based sprite buffer for flicker-free rendering
         QRCodeManager qrCodeManager;   // Integrated QR code generation and rendering
+
+        AppDisplayCallback appCallback = nullptr;   // Custom DisplayManager callback for SDK event forwarding
 
         // ========================================================================
         // STATE MANAGEMENT VARIABLES
